@@ -1,0 +1,73 @@
+/* ------------------------------------------------------------ *\
+	Section-basic
+\* ------------------------------------------------------------ */
+
+.section-basic {
+	background-color: $blue; 
+	padding: 8.7rem 0 15.2rem; 
+	font-size: 3.6rem; 
+
+	@include breakpoint-down(tablet) {
+		padding: 7rem 0; 
+	}
+
+	@include breakpoint-down(mobile) {
+		text-align: center; 
+	}
+
+	.section__title {
+		padding-left: 2.2rem; 
+		padding-bottom: 9.7rem; 
+
+		@include breakpoint-down(small-desktop) {
+			padding-left: 0; 
+		}
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 4rem; 
+		}
+	}
+
+
+	.section__content .section__image {
+		text-align: center; 
+		padding-right: 8.3rem; 
+		padding: 8.3rem 8.3rem 9.3rem 0; 
+
+		@include breakpoint-down(tablet) {
+			padding: 4rem 8.3rem 4rem 0; 
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0 0 3rem; 
+		}
+	}
+
+	.section__image {
+		@include breakpoint-down(mobile) {
+			padding-bottom: 3rem; 
+		}
+	}
+
+	.section__aside {
+		display: flex; 
+		flex-direction: column; 
+		justify-content: space-between; 
+	}
+}
+
+/*  Section-basic--alt  */
+
+.section-basic--alt {
+	padding: 8.7rem 0 14.7rem;
+
+	@include breakpoint-down(tablet) {
+		padding: 7rem 0; 
+	}
+
+	.section__title {
+		padding-left: 0.8rem; 
+		padding-bottom: 8.4rem; 
+	}
+
+}

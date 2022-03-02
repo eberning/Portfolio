@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------ *\
+	Dots
+\* ------------------------------------------------------------ */
+
+.dots {
+	ul {
+		list-style-type: none; 
+		padding: 1.9rem 2.9rem 0 0.7rem; 
+
+		@include breakpoint-down(mobile-medium) {
+			padding: 1.9rem 0 0; 
+		}
+	}
+
+	li {
+		padding-bottom: 3.3rem; 
+	}
+}

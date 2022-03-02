@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	Icons
+\* ------------------------------------------------------------ */
+
+.ico-linkedin {
+	width: 5rem; 
+	height: 4.4rem; 
+}
+
+/*  ico-linkedin--big  */
+
+.ico-linkedin--big {
+	width: 6.8rem; 
+	height: 5.9rem; 
+}
+
+.ico-smile {
+	width: 11.6rem; 
+	height: 11.1rem; 
+
+	@include breakpoint-down(mobile) {
+		width: 8rem; 
+		height: 8rem; 
+	}
+}
+
+.ico-arrow {
+	width: 7.6rem;
+	height: 3.5rem; 
+}
+
+.ico-mail {
+	width: 5rem; 
+	height: 4.6rem; 
+
+	@include breakpoint-down(mobile) {
+		width: 3.9rem; 
+		height: 3.7rem; 
+	}
+}
+
+.ico-blog {
+	width: 5.1rem; 
+	height: 4.2rem; 
+
+	@include breakpoint-down(mobile) {
+		width: 3.9rem; 
+		height: 3.7rem; 
+	}
+}

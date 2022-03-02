@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	padding: 13.6rem 0 14.4rem;
+	text-align: center;
+	background-color: $white2; 
+
+
+	@include breakpoint-down(tablet) {
+		padding: 14rem 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		padding: 10rem 0;
+	}
+
+	& > ul {
+		padding-bottom: 3rem;
+		list-style-type: none;
+		padding-left: 0; 
+
+		li + li {
+			padding-top: 5rem;
+
+			@include breakpoint-down(mobile) {
+				padding-top: 5rem;
+			}
+		}
+	}
+}

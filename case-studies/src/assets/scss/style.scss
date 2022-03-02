@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+  Vendor
+\* ------------------------------------------------------------ */
+
+// @import '../vendor/pointer-js/pointer.css';
+
+/* ------------------------------------------------------------ *\
+	Generic
+\* ------------------------------------------------------------ */
+
+@import 'generic/variables';
+@import 'bootstrap/scss/bootstrap';
+// @import '~tiny-slider/src/tiny-slider';
+@import 'aos/src/sass/aos';
+@import 'generic/functions';
+@import 'generic/mixins';
+@import 'generic/reset';
+@import 'generic/fonts';
+@import 'generic/base';
+@import 'generic/helpers';
+
+/* ------------------------------------------------------------ *\
+	Components
+\* ------------------------------------------------------------ */
+
+@import '_sprite.css';
+@import 'components/*';
+
+/* ------------------------------------------------------------ *\
+	Overwrites
+\* ------------------------------------------------------------ */
+
+@import 'overwrites/pointer-overwrites.scss';

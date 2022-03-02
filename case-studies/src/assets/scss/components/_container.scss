@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------ *\
+	container
+\* ------------------------------------------------------------ */
+
+.container {
+	max-width: calc( #{$container-max-width} + #{$container-gutter} * 2 );
+	padding-left: $container-gutter;
+	padding-right: $container-gutter;
+	margin: auto;
+	width: 100%;
+
+	@include breakpoint-down(mobile) {
+		padding-right: $container-gutter-mobile;
+		padding-left: $container-gutter-mobile;
+	}
+}
+
+/*  container--medium  */
+
+.container--medium {
+	max-width: calc( #{$container-medium-max-width} + #{$container-gutter} * 2 );
+}
+
+/*  container--big  */
+
+.container--big {
+	max-width: calc( #{$container-big-max-width} + #{$container-gutter} * 2 );
+}
+
+/*  container--small  */
+
+.container--small {
+	max-width: calc( #{$container-small-max-width} + #{$container-gutter} * 2 );
+}

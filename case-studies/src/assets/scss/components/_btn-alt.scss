@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	Btn-alt
+\* ------------------------------------------------------------ */
+
+.btn-alt {
+	text-decoration: none; 
+	background-color: $c-black; 
+	color: $white2; 
+	text-transform: uppercase; 
+	display: inline-block; 
+	font-weight: 700; 
+	padding: 3rem 2.2rem 2.6rem; 
+	border-radius: 9rem; 
+	transition: 
+		background-color $t-duration, 
+		color $t-duration; 
+
+	&:hover {
+		background-color: $blue; 
+		color: $c-black; 
+	}
+}

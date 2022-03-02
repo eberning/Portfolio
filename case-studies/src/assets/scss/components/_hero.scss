@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------ *\
+	Hero
+\* ------------------------------------------------------------ */
+
+.hero {
+	padding: 11.6rem 0 5.6rem; 
+	background-color: $white2; 
+	border-radius: 0 0 0 19rem; 
+	position: relative; 
+	z-index: 1; 
+
+	@include breakpoint-down(small-desktop) {
+		border-radius: 0 0 0 9rem; 
+		padding: 9rem 0 10rem; 
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 7rem 0; 
+	}
+
+	@include breakpoint-down(mobile) {
+		border-radius: 0 0 0 4rem; 
+		padding: 7rem 0 4rem; 
+	}
+
+	.hero__head {
+		display: flex; 
+		justify-content: center; 
+		padding-bottom: 10.9rem; 
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 4rem; 
+		}
+
+		h2 {
+			padding-top: 0.8rem; 
+		}
+
+		img {
+			margin-right: 3.4rem; 
+		}
+	}
+
+	.hero__body {
+		text-align: center; 
+		padding-bottom: 8.9rem; 
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 4rem; 
+		}
+	}
+
+	.hero__foot {
+		margin: 0 -3.5rem; 
+
+		h2 {
+			margin-bottom: 1.9rem; 
+		}
+
+		.hero__col {
+			padding: 0 3.5rem; 
+
+			@include breakpoint-down(mobile) {
+				padding: 0 3.5rem 2rem; 
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+/* ------------------------------------------------------------ *\
+	image-grid
+\* ------------------------------------------------------------ */
+
+.image-grid {
+	margin-bottom: -4.4rem; 
+	overflow: hidden; 
+
+	img {
+		box-shadow: $box-shadow;
+	}
+
+	.image-grid__col {
+		padding-bottom: 4.6rem; 
+
+		@include breakpoint-down(tablet) {
+			padding-bottom: 2.6rem; 
+		}
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 1.8rem; 
+		}
+	}
+
+	.image-grid__col--1 img {
+		border-radius: 9.1rem 0 0 0; 
+
+		@include breakpoint-down(mobile) {
+			border-radius: 3rem 0 0 0; 
+		}
+	}
+
+	.image-grid__col--2 img {
+		border-radius: 0 9.1rem 0 0; 
+
+		@include breakpoint-down(mobile) {
+			border-radius: 0 3rem 0 0; 
+		}
+	}
+
+	.image-grid__col--3 img {
+		border-radius: 0 0 0 9.1rem; 
+
+		@include breakpoint-down(mobile) {
+			border-radius: 0 0 0 3rem; 
+		}
+	}
+
+	.image-grid__col--4 img {
+		border-radius: 0 0 9.1rem 0; 
+
+		@include breakpoint-down(mobile) {
+			border-radius: 0 0 3rem 0; 
+		}
+	}
+}

@@ -1,0 +1,62 @@
+//Variables
+$font-size-base             : 2.4rem;
+$font-size-base-mobile      : 1.8rem;
+$font-weight-base           : 400;
+$line-height-base           : 1.17;
+
+$ff-sans-serif              : 'Ubuntu', sans-serif;
+$ff-serif                   : 'Playfair Display', serif;
+$ff-inter                   : 'Inter', sans-serif;
+$ff-source-sans             : 'Source Sans Pro', sans-serif;
+
+$t-duration                 : 0.4s;
+
+$shell-max-width            : 137.3rem;
+$shell-gutter               : 3rem;
+$shell-gutter-mobile        : 1.7rem;
+
+$container-small-max-width  : 83.4rem;
+$container-medium-max-width : 120rem;
+$container-max-width        : 137.3rem;
+$container-big-max-width    : 144rem;
+$container-gutter           : 3rem;
+$container-gutter-mobile    : 1.7rem;
+
+$c-black                    : #000;
+$c-white                    : #fff;
+$c-base                     : #055590;
+$white2                     : #FCFCF5;
+$yellow                     : #F0E07F;
+$red                        : #E26062;
+$blue                       : #A1CBDE;
+$orange                     : #EDAB5D;
+
+
+$white3                     : #E5E5E5;
+
+$purple                     : #552586;
+
+$blue4                      : #193498;
+$blue2                      : #200A24;
+$blue3                      : #68B4D9;
+
+$gray                       : #C4C4C4;
+$gray2                      : #5C5C5C;
+
+$box-shadow                 : 0 .4rem .4rem rgba($c-black, .25);
+
+$gradient-gray              : linear-gradient(180deg, rgba(196,196,196,1) 0%, rgba(196,196,196,0) 100%);
+$gradient-gray2             : linear-gradient(180deg, rgba($gray2,1) 0%, rgba($gray,0) 100%);
+$gradient-black             : linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+
+$responsive-ios             : 812px;
+
+$breakpoints: (
+	mobile-small: 374px,
+	mobile-medium: 575px,
+	mobile: 767px,
+	admin-bar: 782px,
+	tablet: 1023px,
+	small-desktop: 1199px,
+	large-desktop: 1399px
+);

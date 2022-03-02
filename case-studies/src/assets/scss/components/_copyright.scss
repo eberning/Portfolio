@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Copyright
+\* ------------------------------------------------------------ */
+
+.copyright {
+	padding-top: 3.8rem; 
+	font-size: 3.6rem; 
+	font-weight: 700; 
+
+	@include breakpoint-down(mobile) {
+		font-size: 2rem; 
+	}
+
+	img {
+		filter: invert(1);
+
+		@include breakpoint-down(mobile) {
+			width: 1.5rem; 
+			height: 1.5rem; 
+		}
+	}
+}
+
+/*  Copyright--alt  */
+
+.copyright--alt {
+	padding-bottom: 13.5rem; 
+	text-align: center; 
+
+	@include breakpoint-down(mobile-medium) {
+		padding-bottom: 5rem; 
+	}
+}

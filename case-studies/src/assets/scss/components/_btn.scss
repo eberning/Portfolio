@@ -1,0 +1,48 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	appearance: none;
+	text-decoration: none;
+	text-transform: uppercase; 
+	padding: 1.7rem 1.6rem; 
+	border-radius: 1.2rem; 
+	background-color: $c-white; 
+	min-width: 15.3rem;
+	font-size: 1.4rem; 
+	font-weight: 500; 
+	color: $c-black; 
+	transition: 
+		background-color $t-duration, 
+		color $t-duration; 
+
+	&:hover {
+		background-color: $c-black; 
+		color:  $c-white; 
+	}
+}
+
+/*  btn--alt  */
+
+.btn--alt {
+	color: $c-white; 
+	background-color: $c-black; 
+
+	&:hover {
+		background-color: $blue3; 
+		color: $c-white; 
+	}
+}
+
+/*  Btn block  */
+
+.btn--block {
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
+}

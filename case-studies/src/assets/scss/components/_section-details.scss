@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------ *\
+	Section-details
+\* ------------------------------------------------------------ */
+
+.section-details {
+	padding: 3.2rem 0 12rem; 
+	background-color: $yellow; 
+	font-size: 3.6rem; 
+
+	.section__head {
+		max-width: 68.8rem; 
+		padding-left: .3rem; 
+		padding-bottom: 8.2rem;
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 4rem; 
+			text-align: center; 
+			padding-left: 0; 
+		}
+	}
+
+	.section__actions {
+		text-align: center; 
+		padding: 1.9rem 0 6.2rem;  
+
+		@include breakpoint-down(mobile) {
+			padding: 0 0 3rem;  
+		}
+	}
+
+	.section__image {
+		text-align: center; 
+
+		@include breakpoint-down(mobile) {
+			padding-bottom: 2rem; 
+		}
+
+		h4 {
+			margin-bottom: 1.3rem; 
+		}
+	}
+
+	.section__foot {
+		padding: 1.5rem 0 0; 
+		max-width: 70.5rem; 
+
+		@include breakpoint-down(mobile) {
+			text-align: center; 
+		}
+	}
+}
+
+/*  section-details--covered  */
+
+.section-details--covered {
+	padding-bottom: 30rem; 
+}

@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper {
+	background-color: $white2; 
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden; 
+}
+
+.wrapper.has-active-nav {
+	.header__socials {
+		pointer-events: all; 
+		opacity: 1; 
+	}
+
+	.nav--mobile {
+		pointer-events: all; 
+		opacity: 1; 
+	}
+
+	.burger {
+		span:nth-child(1) {
+			transform: translateY(1rem) rotate(45deg); 
+		}
+
+		span:nth-child(2) {
+			opacity: 0; 
+		}
+
+		span:nth-child(3) {
+			transform: translateY(-1rem) rotate(-45deg); 
+		}
+	}
+}

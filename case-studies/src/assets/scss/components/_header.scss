@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	background-color: $c-white; 
+	box-shadow: $box-shadow;
+	position: relative; 
+	z-index: 2; 
+
+	.header__inner {
+		padding: 3.7rem 12.2rem 4.1rem 6.8rem; 
+		display: flex; 
+		justify-content: space-between; 
+		align-items: center; 
+
+		@include breakpoint-down(tablet) {
+			padding: 2rem 0; 
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			align-items: center; 
+		}
+	}
+
+	.header__aside {
+		display: flex; 
+	}
+
+	.header__socials {
+		padding-right: 5.5rem; 
+	}
+}

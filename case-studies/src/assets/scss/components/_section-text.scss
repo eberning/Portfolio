@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Section-text
+\* ------------------------------------------------------------ */
+
+.section-text {
+	padding: 11rem 0 10.6rem; 
+
+	.section__entry {
+		padding: 0 6rem 0; 
+		font-size: 9.6rem; 
+		line-height: 1.257; 
+		font-weight: 700; 
+		font-family: $ff-sans-serif; 
+		text-transform: uppercase; 
+		text-align: center; 
+
+		@include breakpoint-down(tablet) {
+			font-size: 6rem; 
+		}
+
+		@include breakpoint-down(mobile) {
+			padding: 0; 
+			font-size: 4rem; 
+		}
+
+		em {
+			font-family: $ff-serif; 
+			font-weight: 400; 
+			text-transform: none; 
+		}
+	}
+}

@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	Section-callout
+\* ------------------------------------------------------------ */
+
+.section-callout {
+	background-color: $yellow; 
+	text-align: center; 
+	padding: 14.1rem 0 15.8rem; 
+
+	@include breakpoint-down(tablet) {
+		padding: 9rem 0; 
+	}
+
+	.section__actions {
+		ul {
+			list-style-type: none; 
+			padding: 0; 
+		}
+
+		li + li {
+			padding-top: 9.2rem; 
+
+			@include breakpoint-down(mobile) {
+				padding-top: 5rem; 
+			}
+		}
+	}
+}

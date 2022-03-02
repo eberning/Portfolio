@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Burger
+\* ------------------------------------------------------------ */
+
+.burger {
+	display: none;
+
+	@include breakpoint-down(mobile-medium) {
+		display: block;
+		position: absolute;
+		right: $shell-gutter-mobile;
+		top: 2.4rem;
+	}
+
+	span {
+		width: 4rem;
+		height: 0.5rem;
+		display: block;
+		background-color: $c-black;
+		margin: .5rem 0;
+		transition:
+			opacity $t-duration,
+			transform $t-duration;
+	}
+}

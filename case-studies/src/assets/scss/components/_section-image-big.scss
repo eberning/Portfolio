@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	Section-image-big
+\* ------------------------------------------------------------ */
+
+.section-image-big {
+	padding: 7.6rem 0 5.2rem; 
+	background-color: $red; 
+	font-size: 3.6rem; 
+
+	.section__image {
+		text-align: center; 
+		padding-bottom: 4.1rem; 
+
+		img {
+			box-shadow: $box-shadow;
+		}
+	}
+
+	.section__entry {
+		padding: 0 2.1rem; 
+
+		@include breakpoint-down(mobile) {
+			padding: 0; 
+		}
+	}
+}

@@ -1,0 +1,110 @@
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section {
+	padding: 4.8rem 0; 
+
+	.section__title {
+		padding-bottom: 8.3rem; 
+	}
+}
+
+/*  section--alt  */
+
+.section--alt {
+	padding: 4.8rem 0 11.2rem; 
+
+	.section__title {
+		padding-bottom: 4.9rem; 
+	}
+
+	.section__aside {
+		padding-left: 1rem; 
+
+		@include breakpoint-down(tablet) {
+			padding-left: 0; 
+		}
+	}
+}
+
+/*  section--yellow  */
+
+.section--yellow {
+	background-color: $yellow; 
+}
+
+/*  section---covered  */
+
+.section--covered {
+	padding-top: 32.2rem; 
+	margin-top: -18rem; 
+
+	@include breakpoint-down(small-desktop) {
+		padding-top: 25rem; 
+		margin-top: -18rem; 
+	}
+}
+
+/*  section--flex  */
+
+.section--flex {
+	.section__body {
+		display: flex;
+		margin-left: -12rem;
+
+		@include breakpoint-down(large-desktop) {
+			margin-left: 0; 
+		}
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column; 
+		}
+	}
+
+	.section__aside {
+		max-width: 28.4rem; 
+		padding-right: 1rem; 
+		margin-left: -1rem; 
+
+		@include breakpoint-down(large-desktop) {
+			margin-left: 0; 
+		}
+
+		@include breakpoint-down(tablet) {
+			padding-right: 0; 
+			max-width: revert; 
+			padding-top: 4rem; 
+		}
+
+		ul li {
+			padding-bottom: 7.6rem; 
+
+			@include breakpoint-down(large-desktop) {
+				padding-bottom: 5rem; 
+			}
+
+			@include breakpoint-down(tablet) {
+				padding-bottom: 3rem; 
+			}
+		}
+	}
+}
+
+/*  section--flex-reverse  */
+
+.section--flex-reverse {
+	.section__body {
+		flex-direction: row-reverse; 
+		margin-right: -12rem;
+		margin-left: 0;
+
+		@include breakpoint-down(large-desktop) {
+			margin-right: 0; 
+		}
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column; 
+		}
+	}
+}

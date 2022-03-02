@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------ *\
+	Bar
+\* ------------------------------------------------------------ */
+
+.bar {
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+
+	@include breakpoint-down(mobile-medium) {
+		flex-direction: column; 
+		align-items: flex-start; 
+	}
+
+	.bar__body {
+		margin-left: 1rem; 
+		flex: 0 0 60%;
+		font-family: $ff-inter; 
+		font-weight: 500; 
+		color: $orange; 
+		font-size: 2.4rem; 
+		display: flex; 
+		justify-content: space-between; 
+		align-items: center; 
+
+		@include breakpoint-down(mobile-medium) {
+			margin-left: 0; 
+			width: 100%; 
+		}
+
+		div:not([class]) {
+			margin-left: 1rem; 
+			flex: 0 0 65%;
+			background-color: rgba($orange, .2); 
+			border-radius: 40rem;
+			height: 1.6rem; 
+			position: relative; 
+
+			@include breakpoint-down(small-desktop) {
+				flex: 0 0 77%; 
+			}
+
+			&:after {
+				background-color: $orange; 
+				border-radius: 40rem;
+				content: ''; 
+				display: block; 
+				height: 100%; 
+				position: absolute; 
+				left: 0; 
+				top: 0; 
+			}
+		}
+	}
+}
+
+/*  bar--90  */
+
+.bar--90 {
+	.bar__body div:not([class]) {
+		&:after {
+			width: 90%; 
+		}
+	}
+}
+
+/*  bar--80  */
+
+.bar--80 {
+	.bar__body div:not([class]) {
+		&:after {
+			width: 80%; 
+		}
+	}
+}
+
+/*  bar--70  */
+
+.bar--70 {
+	.bar__body div:not([class]) {
+		&:after {
+			width: 70%; 
+		}
+	}
+}
+
+/*  bar--50  */
+
+.bar--50 {
+	.bar__body div:not([class]) {
+		&:after {
+			width: 50%; 
+		}
+	}
+}

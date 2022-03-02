@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------ *\
+	Bio
+\* ------------------------------------------------------------ */
+
+.bio {
+	font-family: $ff-source-sans; 
+	font-size: 1.8rem; 
+	line-height: 1.39; 
+
+	.bio__head {
+		background: linear-gradient(180deg, #6E6868 0%, rgba(229, 229, 229, 0) 100%);
+		border-radius: 3rem;
+		padding: 0.5rem 3.4rem 0; 
+		margin-bottom: 0.7rem; 
+		font-weight: 600; 
+
+		@include breakpoint-down(mobile) {
+			padding: 1.1rem 1.9rem; 
+			border-radius: 1.9rem;
+		}
+
+		strong {
+			font-family: $ff-inter; 
+			font-weight: 500; 
+			margin-bottom: -0.3rem; 
+		}
+	}
+
+	strong {
+		color: $orange; 
+		font-weight: 600; 
+		letter-spacing: .1em; 
+		display: block; 
+	}
+
+	.bio__row {
+		.bio__col {
+			padding-bottom: 3.1rem; 
+		}
+	}
+
+	.bio__row--top {
+		.bio__col {
+			padding-bottom: 0; 
+			padding-top: 1.8rem; 
+
+			@include breakpoint-down(small-desktop) {
+				padding-bottom: 2rem; 
+				padding-top: 0; 
+			}
+		}
+	}
+
+	.bio__col:first-child {
+		border-right: .1rem solid $c-black; 
+
+		@include breakpoint-down(small-desktop) {
+			border: none; 
+		}
+	}
+
+	.bio__col {
+		strong {
+			margin-left: 0.8rem; 
+			margin-bottom: 3rem; 
+
+			@include breakpoint-down(small-desktop) {
+				margin-left: 0; 
+			}
+		}
+
+		& > ul {
+			list-style-type: none; 
+			padding-left: 1.7rem;
+			margin-bottom: -2.75rem; 
+		}
+
+		& > ul > li {
+			position: relative; 
+			padding-bottom: 2.75rem; 
+
+			&:before {
+				content: ''; 
+				display: block; 
+				border-radius: 50%; 
+				width: .4rem; 
+				height: .4rem; 
+				background-color: $c-black; 
+				position: absolute; 
+				top: 1.2rem; 
+				left: -1.6rem; 
+			}
+		}
+	}
+}

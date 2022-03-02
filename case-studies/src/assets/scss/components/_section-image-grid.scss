@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	Section-image-grid
+\* ------------------------------------------------------------ */
+
+.section-image-grid {
+	padding: 7rem 0 4.4rem; 
+	margin-top: -.1rem; 
+	background-color: $red; 
+	font-size: 3.6rem; 
+
+	.section__head {
+		text-align: center; 
+		padding-bottom: 9.6rem; 
+
+		@include breakpoint-down(tablet) {
+			padding-bottom: 5rem; 
+		}
+	}
+
+	.section__title {
+		padding-bottom: 6.5rem; 
+	}
+
+	.section__body {
+		padding-bottom: 10.7rem; 
+	}
+}

@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Brands
+\* ------------------------------------------------------------ */
+
+.brands {
+	color: $orange; 
+	font-family: $ff-inter; 
+	font-size: 1.8rem; 
+	padding: 4.5rem 0 0 7.4rem; 
+
+	@include breakpoint-down(mobile) {
+		padding: 2rem 0 3rem; 
+	}
+
+	strong {
+		font-weight: 600; 
+		display: block; 
+		margin-bottom: 4.2rem; 
+	}
+
+	ul {
+		padding: 0; 
+		list-style-type: none; 
+		display: flex; 
+		margin-left: -1rem; 
+		margin-right: -0.5rem; 
+	}
+
+	ul li {
+		padding: 0 0.5rem; 
+	}
+}
